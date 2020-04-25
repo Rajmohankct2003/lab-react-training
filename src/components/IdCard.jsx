@@ -3,12 +3,9 @@ import './IdCard.css'
 
 export default function IdCard(props) {
 
-    const date = props.birth
-    
+    const date = props.birth;
     const dateArray = date.split("-");
-    console.log(dateArray)
-    var birthdate = '';
-    birthdate = new Date(dateArray).toDateString();
+    let birthdate = new Date(dateArray).toDateString();
     console.log("birthdate:", birthdate)
 
     return (
